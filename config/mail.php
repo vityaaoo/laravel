@@ -28,28 +28,41 @@ return [
     | sending an e-mail. You will specify which one you are using for your
     | mailers below. You are free to add additional mailers as required.
     |
+<<<<<<< HEAD
     | Supported: "smtp", "sendmail", "mailgun", "ses", "ses-v2",
     |            "postmark", "log", "array", "failover", "roundrobin"
+=======
+    | Supported: "smtp", "sendmail", "mailgun", "ses",
+    |            "postmark", "log", "array"
+>>>>>>> bc2005be06ac16878f7a8c369e5bc689f4572af7
     |
     */
 
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
+<<<<<<< HEAD
             'url' => env('MAIL_URL'),
+=======
+>>>>>>> bc2005be06ac16878f7a8c369e5bc689f4572af7
             'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
             'port' => env('MAIL_PORT', 587),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
             'username' => env('MAIL_USERNAME'),
             'password' => env('MAIL_PASSWORD'),
             'timeout' => null,
+<<<<<<< HEAD
             'local_domain' => env('MAIL_EHLO_DOMAIN'),
+=======
+            'auth_mode' => null,
+>>>>>>> bc2005be06ac16878f7a8c369e5bc689f4572af7
         ],
 
         'ses' => [
             'transport' => 'ses',
         ],
 
+<<<<<<< HEAD
         'postmark' => [
             'transport' => 'postmark',
             // 'message_stream_id' => null,
@@ -63,11 +76,23 @@ return [
             // 'client' => [
             //     'timeout' => 5,
             // ],
+=======
+        'mailgun' => [
+            'transport' => 'mailgun',
+        ],
+
+        'postmark' => [
+            'transport' => 'postmark',
+>>>>>>> bc2005be06ac16878f7a8c369e5bc689f4572af7
         ],
 
         'sendmail' => [
             'transport' => 'sendmail',
+<<<<<<< HEAD
             'path' => env('MAIL_SENDMAIL_PATH', '/usr/sbin/sendmail -bs -i'),
+=======
+            'path' => '/usr/sbin/sendmail -bs',
+>>>>>>> bc2005be06ac16878f7a8c369e5bc689f4572af7
         ],
 
         'log' => [
@@ -78,6 +103,7 @@ return [
         'array' => [
             'transport' => 'array',
         ],
+<<<<<<< HEAD
 
         'failover' => [
             'transport' => 'failover',
@@ -94,6 +120,8 @@ return [
                 'postmark',
             ],
         ],
+=======
+>>>>>>> bc2005be06ac16878f7a8c369e5bc689f4572af7
     ],
 
     /*

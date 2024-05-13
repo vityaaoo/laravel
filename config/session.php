@@ -72,7 +72,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'connection' => env('SESSION_CONNECTION'),
+=======
+    'connection' => env('SESSION_CONNECTION', null),
+>>>>>>> bc2005be06ac16878f7a8c369e5bc689f4572af7
 
     /*
     |--------------------------------------------------------------------------
@@ -100,7 +104,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'store' => env('SESSION_STORE'),
+=======
+    'store' => env('SESSION_STORE', null),
+>>>>>>> bc2005be06ac16878f7a8c369e5bc689f4572af7
 
     /*
     |--------------------------------------------------------------------------
@@ -155,7 +163,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'domain' => env('SESSION_DOMAIN'),
+=======
+    'domain' => env('SESSION_DOMAIN', null),
+>>>>>>> bc2005be06ac16878f7a8c369e5bc689f4572af7
 
     /*
     |--------------------------------------------------------------------------
@@ -164,7 +176,11 @@ return [
     |
     | By setting this option to true, session cookies will only be sent back
     | to the server if the browser has a HTTPS connection. This will keep
+<<<<<<< HEAD
     | the cookie from being sent to you when it can't be done securely.
+=======
+    | the cookie from being sent to you if it can not be done securely.
+>>>>>>> bc2005be06ac16878f7a8c369e5bc689f4572af7
     |
     */
 
@@ -198,6 +214,7 @@ return [
 
     'same_site' => 'lax',
 
+<<<<<<< HEAD
     /*
     |--------------------------------------------------------------------------
     | Partitioned Cookies
@@ -211,4 +228,6 @@ return [
 
     'partitioned' => false,
 
+=======
+>>>>>>> bc2005be06ac16878f7a8c369e5bc689f4572af7
 ];

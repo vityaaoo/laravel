@@ -11,7 +11,11 @@ return [
     | framework when an event needs to be broadcast. You may set this to
     | any of the connections defined in the "connections" array below.
     |
+<<<<<<< HEAD
     | Supported: "pusher", "ably", "redis", "log", "null"
+=======
+    | Supported: "pusher", "redis", "log", "null"
+>>>>>>> bc2005be06ac16878f7a8c369e5bc689f4572af7
     |
     */
 
@@ -37,6 +41,7 @@ return [
             'app_id' => env('PUSHER_APP_ID'),
             'options' => [
                 'cluster' => env('PUSHER_APP_CLUSTER'),
+<<<<<<< HEAD
                 'host' => env('PUSHER_HOST') ?: 'api-'.env('PUSHER_APP_CLUSTER', 'mt1').'.pusher.com',
                 'port' => env('PUSHER_PORT', 443),
                 'scheme' => env('PUSHER_SCHEME', 'https'),
@@ -51,6 +56,10 @@ return [
         'ably' => [
             'driver' => 'ably',
             'key' => env('ABLY_KEY'),
+=======
+                'useTLS' => true,
+            ],
+>>>>>>> bc2005be06ac16878f7a8c369e5bc689f4572af7
         ],
 
         'redis' => [

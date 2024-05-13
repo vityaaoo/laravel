@@ -29,8 +29,12 @@ return [
     */
 
     'bcrypt' => [
+<<<<<<< HEAD
         'rounds' => env('BCRYPT_ROUNDS', 12),
         'verify' => true,
+=======
+        'rounds' => env('BCRYPT_ROUNDS', 10),
+>>>>>>> bc2005be06ac16878f7a8c369e5bc689f4572af7
     ],
 
     /*
@@ -45,10 +49,16 @@ return [
     */
 
     'argon' => [
+<<<<<<< HEAD
         'memory' => 65536,
         'threads' => 1,
         'time' => 4,
         'verify' => true,
+=======
+        'memory' => 1024,
+        'threads' => 2,
+        'time' => 2,
+>>>>>>> bc2005be06ac16878f7a8c369e5bc689f4572af7
     ],
 
 ];
