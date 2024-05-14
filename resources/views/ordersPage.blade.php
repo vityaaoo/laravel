@@ -3,11 +3,7 @@
 </head>
 <body>
 <div class=a></div>
-<<<<<<< HEAD
 <h1>Confirmed orders for user {{  $userName  }} in the last week</h1>
-=======
-<h1>Confirmed orders for user {{  $userID  }} in the last week</h1>
->>>>>>> bc2005be06ac16878f7a8c369e5bc689f4572af7
 <table border=1>
     <th>OrderID</th><th>UserID</th><th>ServiceID</th><th>TotalTime</th><th>Earnings</th><th>Status</th><th>CreatedAt</th>
     @foreach($orders as $order)
